@@ -1,0 +1,7 @@
+(executable
+ (name main)
+ (package aoc2021)
+ (public_name day1)
+ (preprocess
+  (pps ppx_deriving.show))
+ (libraries  lwt base lwt.unix))
