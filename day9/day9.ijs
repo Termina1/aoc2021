@@ -25,7 +25,7 @@ updatebasins =. (mapadjacent ([ test (] #~ (pn&> *. 10&<:))@:])`'') `: 6
 step =. (((1 1,: 3 3)&(updatebasins (;. _3)))@pad)
 solution =. ((step ^:9) basins)
 
-ids =. (I.@>&0 t {) (,/ marked_lowpoints) NB. retreieve all different bases for basins
+ids =. (I.@(>&0) { ]) (,/ marked_lowpoints) NB. retreieve all different bases for basins
 
 sum =. dyad define
   z =. (x <: solution) *. ((x + 10) > solution)
