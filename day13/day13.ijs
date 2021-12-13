@@ -9,4 +9,4 @@ fold =. (|.@}.@:}. +. {.)
 foldover =. ((1{[) fold ])`((1{[) fold"1 ])@.(0{[)
 
 ] part1 =. +/^:2 (0 { folds) foldover table
-] part2 =. (table ] F.. foldover folds) { '.#'
+] part2 =. (table ({&'.#') F.. foldover folds)
