@@ -34,7 +34,7 @@ fold =. (] [`replaceadjacent@.(gz@]) (pairs ((0$0)&[@])`magnitude@.(gz@[) ]))
 calcmagnitude =. 1&{@:(,/@(] F.. fold)&(}: i._5))
 
 start_jpm_ ''
-] part1 = calcmagnitude > (sum~/ (|. nums))
+] part1 =. calcmagnitude > (sum~/ (|. nums))
 cartesian =. {@(,&<)
 all_pairs =. (>@((1{] ~: 0{])&.>) # ]) ,/ (nums cartesian nums)
 ] part2 =. 0 ] F.. (] >. ((calcmagnitude@>@(sum~/) >. calcmagnitude@>@(sum/))@:>@:[)) all_pairs
