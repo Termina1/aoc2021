@@ -1,3 +1,5 @@
+load 'jpm'
+
 update =. {{ (([ u (n&{)@:]) n} ]) }}
 cartesian =. {@(,&<)
 
@@ -36,5 +38,6 @@ quantumplay =. {{ +/ dirackmap {  > ((1&haswon , 2&haswon)@;@state)`(quantumplay
 quantumplayM =. quantumplay M.
 
 ] part1 =. (looserscore@state * ;@games) (lift@(+/ play droll))^:(-.@(1000&stop)@:>@:state)^:_ (0;(1 2 3);<positions)
+start_jpm_ ''
 ] part2 =. >./ quantumplayM (0;dirackdicecomp;<positions)
 
